@@ -1,4 +1,4 @@
-# Python_Network-Automation_Nornir
+# Network Automation using Nornir
 
 Sample Nornir Projects
 
