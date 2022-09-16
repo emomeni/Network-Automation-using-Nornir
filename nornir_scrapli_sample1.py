@@ -5,7 +5,14 @@ from nornir_scrapli.tasks import send_command
 
 nr = InitNornir(config_file="config.yaml")
 
+# this task populates the inventory of the nornir object with
+# the host's "show interface status" data
+
 def populate_host_interface_status(task: Task) -> None:
+    """
+    get the live interface status from a device.
+    transform the response into structured data associated with each host.
+    """
     result = task.run(task=send_command, command="show ip interface brief")
     task.host["interface_status"] = result.scrapli_response.genie_parse_output()
 
