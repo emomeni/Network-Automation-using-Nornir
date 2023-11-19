@@ -59,3 +59,23 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+"""
+Sample OutPut:
+{
+    'Router1': {
+        'platform': 'Cisco CSR1000V',
+        'os_model': 'CSR1000V',
+        'os_version': '16.12.3',
+        'tunnel_ip_addresses': ['10.0.0.1']
+    },
+    'Router2': {
+        'platform': 'Cisco ISR4321',
+        'os_model': 'ISR4321',
+        'os_version': '16.11.1',
+        'tunnel_ip_addresses': []  # Empty list because "10.0.0.1" is not found in the tunnels on this device
+    }
+}
+"""
