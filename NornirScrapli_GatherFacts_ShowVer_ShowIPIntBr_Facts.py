@@ -60,7 +60,6 @@ def main():
 if __name__ == "__main__":
     main()
 
-
 """
 Sample OutPut of the above code:
 {
