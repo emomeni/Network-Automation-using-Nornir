@@ -61,9 +61,8 @@ if __name__ == "__main__":
     main()
 
 
-
 """
-Sample OutPut:
+Sample OutPut of the above code:
 {
     'Router1': {
         'platform': 'Cisco CSR1000V',
